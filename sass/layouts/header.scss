@@ -1,8 +1,32 @@
 /* HEADER */
 
 .header {
-    width:100%;
-    margin:auto;
-    display:flex;
-    justify-content:center;
+        width:100%;
+        margin:auto;
+        height:7rem;
+        display:flex;
+        justify-content:center;
+        @media screen and (max-width: 230px) { /* montres connectées */
+          overflow:hidden;   
+        }
+}
+
+
+.header--bgColor {
+        background-color:$color-bg-headFoot; 
+}
+
+.header__mainTitle--color {
+        color: $color-titres;
+}
+
+.header__mainTitle--typo {
+        font-family: 'Open Sans', sans-serif;
+        font-weight:700;
+        font-size:3rem;
+        letter-spacing:-0.2rem;
+}
+
+.header--border { /* problème de rendu à corriger */
+        border-bottom: 0.2rem fade-out(rgba($color-bg-headFoot,1),0.5) solid;
 }
