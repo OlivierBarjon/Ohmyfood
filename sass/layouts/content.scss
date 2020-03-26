@@ -1,3 +1,39 @@
 /* CONTENT */
 
+.content {
+    display: flex;
+    flex-direction:column; 
+    justify-content: flex-start;
+    align-items: center;
+    margin:auto;
+    box-shadow:0 0 1rem $color-border-menu;
+    margin-top:1rem;
+    
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 13rem;
+        width:20rem;
+        height: 30rem;
+    }
+    @media screen and (min-width: 767.99px) {
+        margin-bottom: 7rem;
+        width:37rem;
+        height: 55rem;
+    } 
+}
 
+
+.content__menu1--bgColor {
+    background-color:$color-bg-menu1; 
+}
+
+.content__menu2--bgColor {
+    background-color:$color-bg-menu2; 
+}
+
+.content__menu3--bgColor {
+    background-color:$color-bg-menu3; 
+}
+
+.content__menu4--bgColor {
+    background-color:$color-bg-menu4; 
+}

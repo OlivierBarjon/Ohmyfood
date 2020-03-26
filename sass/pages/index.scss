@@ -1,5 +1,5 @@
-/* PAGE D'ACCUEIL */
-.content {
+/* PAGE D'ACCUEIL - LANDING PAGE */
+.contentLD {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -17,7 +17,7 @@
     }  
 }
 
-.content__menu {
+.contentLD__menu {
     box-shadow: 0 0 1rem $color-border-menu;
     margin: 1rem;
     width:17rem;
@@ -25,7 +25,7 @@
 }
 
 
-.menu1 {
+.menuLD1 {
     background-color: $color-bg-menu1;
     display:flex;
     flex-direction:column;
@@ -33,7 +33,7 @@
     align-items:center;
 }
 
-.menu2 {
+.menuLD2 {
     background-color: $color-bg-menu2; 
     display:flex;
     flex-direction:column;
@@ -41,7 +41,7 @@
     align-items:center;
 }
 
-.menu3 {
+.menuLD3 {
     background-color: $color-bg-menu3; 
     display:flex;
     flex-direction:column;
@@ -49,7 +49,7 @@
     align-items:center;
 }
 
-.menu4 {
+.menuLD4 {
     background-color: $color-bg-menu4; 
     display:flex;
     flex-direction:column;
