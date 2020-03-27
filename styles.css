@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/* COULEURS */
+/* ###### VARIABLES ######*/
+/* ### COULEURS ### */
+/* ###### MIXINS ######*/
+/* ### FONTS ### */
+/* ### BLOCS MENU LANDING PAGE ### */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -344,20 +348,22 @@ template {
   display: none;
 }
 
+/* ######### BASES ########## */
 html {
   font-size: 62, 5%;
   /* modifie la taille de base de sorte qu'1 rem = 10px  */
 }
 
+/* ### FONT ### */
 a {
   text-decoration: none;
 }
 
-/* POLICES TITRES */
 h1 a {
   color: #fdcb46;
 }
 
+/* Titre h2 Landing page */
 .menuLD1--Typo {
   font-family: "Devonshire", cursive;
   text-align: center;
@@ -383,30 +389,32 @@ h1 a {
 }
 
 /* POLICE PRINCIPALE */
-/*  font-family: 'Open Sans', sans-serif;  */
+/*  font-family: 'Open Sans', sans-serif; 
+Utiliser : @include mainFont  */
 /* POLICES TITRES MENU */
 /* 
 
- MENU 1:   font-family: 'Devonshire', cursive;
+ MENU 1:   @include title1Font
 
- MENU 2:   font-family: 'Croissant One', cursive;
+ MENU 2:   @include title2Font
 
- MENU 3:   font-family: 'Parisienne', cursive;
+ MENU 3:   @include title3Font
 
- MENU 4:   font-family: 'Kaushan Script', cursive;
+ MENU 4:   @include title4Font
 
 */
 /* MENU 1 */
 /*
-font-family: 'Amatic SC', cursive;
+@include menu1Font
 */
 /* MENU 2 */
 /* 
-font-family: 'Libre Baskerville', serif;
+@include menu2Font
 */
 /* MENU 3 et 4 */
 /* 
-font-family: 'Merienda', cursive;
+@include menu3Font
+@include menu4Font
 */
 /* MAIN CONTAINER */
 .container {
@@ -559,39 +567,44 @@ font-family: 'Merienda', cursive;
     width: 40rem;
   }
 }
-
-.contentLD__menu {
+.contentLD__menu1 {
   box-shadow: 0 0 1rem #ededed;
   margin: 1rem;
   width: 17rem;
   height: 25rem;
-}
-
-.menuLD1 {
   background-color: #fcdfdb;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.menuLD2 {
+.contentLD__menu2 {
+  box-shadow: 0 0 1rem #ededed;
+  margin: 1rem;
+  width: 17rem;
+  height: 25rem;
   background-color: #fff5fe;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.menuLD3 {
+.contentLD__menu3 {
+  box-shadow: 0 0 1rem #ededed;
+  margin: 1rem;
+  width: 17rem;
+  height: 25rem;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.menuLD4 {
+.contentLD__menu4 {
+  box-shadow: 0 0 1rem #ededed;
+  margin: 1rem;
+  width: 17rem;
+  height: 25rem;
   background-color: #fdfffd;
   display: flex;
   flex-direction: column;

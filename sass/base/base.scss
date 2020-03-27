@@ -1,41 +1,44 @@
+/* ######### BASES ########## */
+
 html {
     font-size:62,5%; /* modifie la taille de base de sorte qu'1 rem = 10px  */
 }
+
+
+
+/* ### FONT ### */
+
 
 a {
     text-decoration: none;
 }
 
-
-/* POLICES TITRES */
-
-
 h1 a {
     color:#fdcb46;
 }
 
-
+/* Titre h2 Landing page */
 
 .menuLD1--Typo {
-    font-family: 'Devonshire', cursive;
+    @include title1Font;
     text-align: center;
     font-size: 1.4rem;
 }
 
 .menuLD2--Typo {
-    font-family: 'Croissant One', cursive;
+    @include title2Font;
     text-align: center;
     font-size: 1.1rem;
 }
 
 .menuLD3--Typo {
-    font-family: 'Parisienne', cursive;
+    @include title3Font;
     text-align: center;
     font-size: 1.4rem;
 }
 
 .menuLD4--Typo {
-    font-family: 'Kaushan Script', cursive;
+    @include title4Font;
     text-align: center;
     font-size: 1.4rem;
 }

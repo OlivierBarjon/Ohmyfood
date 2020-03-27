@@ -1,4 +1,5 @@
 /* PAGE D'ACCUEIL - LANDING PAGE */
+
 .contentLD {
     display: flex;
     flex-wrap: wrap;
@@ -14,47 +15,40 @@
     @media screen and (min-width: 767.99px) {
         flex-direction:row; 
         width:40rem;
-    }  
-}
-
-.contentLD__menu {
-    box-shadow: 0 0 1rem $color-border-menu;
-    margin: 1rem;
-    width:17rem;
-    height: 25rem;
-}
-
-
-.menuLD1 {
-    background-color: $color-bg-menu1;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.menuLD2 {
-    background-color: $color-bg-menu2; 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.menuLD3 {
-    background-color: $color-bg-menu3; 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.menuLD4 {
-    background-color: $color-bg-menu4; 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    }
+    &__menu1{
+            @include menusLD;
+            background-color: $color-bg-menu1;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+    &__menu2{
+            @include menusLD;
+            background-color: $color-bg-menu2; 
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+    }
+     &__menu3{
+            @include menusLD;
+            background-color: $color-bg-menu3; 
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+    }
+     &__menu4{
+            @include menusLD;
+            background-color: $color-bg-menu4; 
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+    }
+    
 }
 
 /* MENU */

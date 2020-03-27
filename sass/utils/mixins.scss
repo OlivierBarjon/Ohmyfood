@@ -1,0 +1,49 @@
+
+/* ###### MIXINS ######*/
+
+/* ### FONTS ### */
+
+@mixin mainFont {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@mixin title1Font {
+    font-family: 'Devonshire', cursive;
+}
+
+@mixin title2Font {
+    font-family: 'Croissant One', cursive;
+}
+
+@mixin title3Font {
+    font-family: 'Parisienne', cursive;
+}
+
+@mixin title4Font {
+    font-family: 'Kaushan Script', cursive;
+}
+
+@mixin menu1Font {
+    font-family: 'Amatic SC', cursive;
+}
+
+@mixin menu2Font {
+    font-family: 'Libre Baskerville', serif;
+}
+
+@mixin menu3Font {
+    font-family: 'Merienda', cursive;
+}
+
+@mixin menu4Font {
+    font-family: 'Merienda', cursive;
+}
+
+/* ### BLOCS MENU LANDING PAGE ### */
+
+@mixin menusLD {
+        box-shadow: 0 0 1rem $color-border-menu;
+        margin: 1rem;
+        width:17rem;
+        height: 25rem;
+}
