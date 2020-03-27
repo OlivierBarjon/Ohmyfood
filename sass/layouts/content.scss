@@ -1,5 +1,11 @@
 /* CONTENT */
 
+main h2 {
+    text-align: center;
+    margin-top:2rem;
+    @include mainFont;
+}
+
 .content {
     display: flex;
     flex-direction:column; 
@@ -8,27 +14,71 @@
     margin:auto;
     box-shadow:0 0 1rem $color-border-menu;
     margin-top:1rem;
-    
+    padding:3rem 0 6rem 0;
     @media screen and (max-width: 767.98px) {
         margin-bottom: 13rem;
         width:20rem;
-        height: 30rem;
     }
     @media screen and (min-width: 767.99px) {
         margin-bottom: 7rem;
         width:37rem;
-        height: 55rem;
     }
-    &__menu1--bgColor {
+    &--bgColor1 {
         background-color:$color-bg-menu1; 
     }
-    &__menu2--bgColor {
+    &--bgColor2 {
         background-color:$color-bg-menu2; 
     }
-    &__menu3--bgColor {
+    &--bgColor3 {
         background-color:$color-bg-menu3; 
     }
-    &__menu4--bgColor {
+    &--bgColor4 {
         background-color:$color-bg-menu4; 
     }
+    img {
+        height:3rem;
+        margin-top:3rem;
+    }
+    p>img {  /* solution temporaire */
+        height:1.5rem;
+        margin-top: 0rem;
+        margin-right : 0.5rem;
+    }
+    article {
+        width:80%;
+        h4 {
+            text-align: center;
+        }
+    }
+    &--typoNote {
+        @include menu1Font;
+        h3 {
+            @include title1Font;
+        }
+    }
+    &--typoPalette {
+        @include menu2Font;
+        h3 {
+            @include title2Font;
+        }
+    }
+    &--typoChic {
+        @include menu3Font;
+        h3 {
+            @include title3Font;
+        }
+    }
+    &--typoDelice {
+        @include menu4Font;
+        h3 {
+            @include title4Font;
+        }
+    }
+    &--typoMentions {
+        @include mainFont;
+    }
+}
+
+.tarifFloat {
+    float:right;
 }

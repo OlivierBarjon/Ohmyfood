@@ -359,7 +359,7 @@ a {
   text-decoration: none;
 }
 
-h1 a {
+h1 a, p a {
   color: #fdcb46;
 }
 
@@ -457,6 +457,12 @@ h1 a {
 }
 
 /* CONTENT */
+main h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -465,32 +471,78 @@ h1 a {
   margin: auto;
   box-shadow: 0 0 1rem #ededed;
   margin-top: 1rem;
+  padding: 3rem 0 6rem 0;
 }
 @media screen and (max-width: 767.98px) {
   .content {
     margin-bottom: 13rem;
     width: 20rem;
-    height: 30rem;
   }
 }
 @media screen and (min-width: 767.99px) {
   .content {
     margin-bottom: 7rem;
     width: 37rem;
-    height: 55rem;
   }
 }
-.content__menu1--bgColor {
+.content--bgColor1 {
   background-color: #fcdfdb;
 }
-.content__menu2--bgColor {
+.content--bgColor2 {
   background-color: #fff5fe;
 }
-.content__menu3--bgColor {
+.content--bgColor3 {
   background-color: #f9f9f9;
 }
-.content__menu4--bgColor {
+.content--bgColor4 {
   background-color: #fdfffd;
+}
+.content img {
+  height: 3rem;
+  margin-top: 3rem;
+}
+.content p > img {
+  /* solution temporaire */
+  height: 1.5rem;
+  margin-top: 0rem;
+  margin-right: 0.5rem;
+}
+.content article {
+  width: 80%;
+}
+.content article h4 {
+  text-align: center;
+}
+.content--typoNote {
+  font-family: "Amatic SC", cursive;
+}
+.content--typoNote h3 {
+  font-family: "Devonshire", cursive;
+}
+.content--typoPalette {
+  font-family: "Libre Baskerville", serif;
+}
+.content--typoPalette h3 {
+  font-family: "Croissant One", cursive;
+}
+.content--typoChic {
+  font-family: "Merienda", cursive;
+}
+.content--typoChic h3 {
+  font-family: "Parisienne", cursive;
+}
+.content--typoDelice {
+  font-family: "Merienda", cursive;
+}
+.content--typoDelice h3 {
+  font-family: "Kaushan Script", cursive;
+}
+.content--typoMentions {
+  font-family: "Open Sans", sans-serif;
+}
+
+.tarifFloat {
+  float: right;
 }
 
 /* ######### LANDING PAGE  ############ */
@@ -527,6 +579,12 @@ h1 a {
   justify-content: center;
   align-items: center;
 }
+.contentLD__menu1 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contentLD__menu1 h2 {
   font-family: "Devonshire", cursive;
   text-align: center;
@@ -544,6 +602,12 @@ h1 a {
   width: 17rem;
   height: 25rem;
   background-color: #fff5fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentLD__menu2 a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -569,6 +633,12 @@ h1 a {
   justify-content: center;
   align-items: center;
 }
+.contentLD__menu3 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contentLD__menu3 h2 {
   font-family: "Parisienne", cursive;
   text-align: center;
@@ -583,6 +653,12 @@ h1 a {
   width: 17rem;
   height: 25rem;
   background-color: #fdfffd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentLD__menu4 a {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -25,6 +25,12 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
+            a {
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
             h2 {
                 @include title1Font;
                 text-align: center;
@@ -44,6 +50,12 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
+            a {
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
             h2 {
                 @include title2Font;
                 text-align: center;
@@ -61,6 +73,12 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
+            a {
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
              h2 {
                 @include title3Font;
                 text-align: center;
@@ -77,6 +95,12 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
+            a {
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
              h2 {
                 @include title4Font;
                 text-align: center;
