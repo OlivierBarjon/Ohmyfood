@@ -2,18 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 
-/*  font-family: 'Open Sans', sans-serif; 
-Utiliser : @include mainFont  */
-
+/* @include mainFont  */
 
 
 /* POLICES TITRES MENU */
 
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Kaushan+Script&family=Parisienne&display=swap');
 
-
 /* 
-
  MENU 1:   @include title1Font
 
  MENU 2:   @include title2Font
@@ -21,11 +17,10 @@ Utiliser : @include mainFont  */
  MENU 3:   @include title3Font
 
  MENU 4:   @include title4Font
-
 */
 
 
-/* MENU 1 */
+/* TEXTES MENU 1 */
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
@@ -33,21 +28,20 @@ Utiliser : @include mainFont  */
 @include menu1Font
 */
 
-/* MENU 2 */
+/* TEXTES MENU 2 */
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
-/* 
-@include menu2Font
-*/
+/* @include menu2Font */
 
 
 
-/* MENU 3 et 4 */
+/* TEXTES MENU 3 et 4 */
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 
 /* 
 @include menu3Font
+
 @include menu4Font
 */
 

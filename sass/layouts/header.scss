@@ -6,27 +6,18 @@
         height:7rem;
         display:flex;
         justify-content:center;
+        border-bottom: 0.2rem fade-out(rgba($color-bg-headFoot,1),0.5) solid;  /* problème de rendu à corriger */
         @media screen and (max-width: 230px) { /* montres connectées */
           overflow:hidden;   
         }
-}
-
-
-.header--bgColor {
-        background-color:$color-bg-headFoot; 
-}
-
-.header__mainTitle--color {
-        color: $color-titres;
-}
-
-.header__mainTitle--typo {
-        font-family: 'Open Sans', sans-serif;
-        font-weight:700;
-        font-size:3rem;
-        letter-spacing:-0.2rem;
-}
-
-.header--border { /* problème de rendu à corriger */
-        border-bottom: 0.2rem fade-out(rgba($color-bg-headFoot,1),0.5) solid;
+        &--bgColor {
+            background-color:$color-bg-headFoot; 
+        }
+        h1 {
+            color: $color-titres;
+            font-family: 'Open Sans', sans-serif;
+            font-weight:700;
+            font-size:3rem;
+            letter-spacing:-0.2rem;          
+        }
 }

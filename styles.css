@@ -363,37 +363,10 @@ h1 a {
   color: #fdcb46;
 }
 
-/* Titre h2 Landing page */
-.menuLD1--Typo {
-  font-family: "Devonshire", cursive;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-.menuLD2--Typo {
-  font-family: "Croissant One", cursive;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.menuLD3--Typo {
-  font-family: "Parisienne", cursive;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-.menuLD4--Typo {
-  font-family: "Kaushan Script", cursive;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
 /* POLICE PRINCIPALE */
-/*  font-family: 'Open Sans', sans-serif; 
-Utiliser : @include mainFont  */
+/* @include mainFont  */
 /* POLICES TITRES MENU */
 /* 
-
  MENU 1:   @include title1Font
 
  MENU 2:   @include title2Font
@@ -401,19 +374,17 @@ Utiliser : @include mainFont  */
  MENU 3:   @include title3Font
 
  MENU 4:   @include title4Font
-
 */
-/* MENU 1 */
+/* TEXTES MENU 1 */
 /*
 @include menu1Font
 */
-/* MENU 2 */
-/* 
-@include menu2Font
-*/
-/* MENU 3 et 4 */
+/* TEXTES MENU 2 */
+/* @include menu2Font */
+/* TEXTES MENU 3 et 4 */
 /* 
 @include menu3Font
+
 @include menu4Font
 */
 /* MAIN CONTAINER */
@@ -430,6 +401,8 @@ Utiliser : @include mainFont  */
   height: 7rem;
   display: flex;
   justify-content: center;
+  border-bottom: 0.2rem rgba(87, 156, 135, 0.5) solid;
+  /* problème de rendu à corriger */
 }
 @media screen and (max-width: 230px) {
   .header {
@@ -437,25 +410,15 @@ Utiliser : @include mainFont  */
     overflow: hidden;
   }
 }
-
 .header--bgColor {
   background-color: #579c87;
 }
-
-.header__mainTitle--color {
+.header h1 {
   color: #fdcb46;
-}
-
-.header__mainTitle--typo {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: -0.2rem;
-}
-
-.header--border {
-  /* problème de rendu à corriger */
-  border-bottom: 0.2rem rgba(87, 156, 135, 0.5) solid;
 }
 
 /* FOOTER */
@@ -467,6 +430,8 @@ Utiliser : @include mainFont  */
   align-items: center;
   position: fixed;
   bottom: 0rem;
+  border-top: 0.2rem rgba(87, 156, 135, 0.5) solid;
+  /* problème de rendu à corriger */
 }
 @media screen and (max-width: 767.98px) {
   .footer {
@@ -480,28 +445,15 @@ Utiliser : @include mainFont  */
     height: 4.5rem;
   }
 }
-
 .footer--bgColor {
   background-color: #579c87;
 }
-
-.footer__txt--color {
-  color: #fdcb46;
-}
-
-.footer__txt--typo {
+.footer p, .footer a {
+  padding: 0rem 1.3rem 0rem 1.3rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
-}
-
-.footer p {
-  padding: 0rem 1.3rem 0rem 1.3rem;
-}
-
-.footer--border {
-  /* problème de rendu à corriger */
-  border-top: 0.2rem rgba(87, 156, 135, 0.5) solid;
+  color: #fdcb46;
 }
 
 /* CONTENT */
@@ -528,24 +480,21 @@ Utiliser : @include mainFont  */
     height: 55rem;
   }
 }
-
 .content__menu1--bgColor {
   background-color: #fcdfdb;
 }
-
 .content__menu2--bgColor {
   background-color: #fff5fe;
 }
-
 .content__menu3--bgColor {
   background-color: #f9f9f9;
 }
-
 .content__menu4--bgColor {
   background-color: #fdfffd;
 }
 
-/* PAGE D'ACCUEIL - LANDING PAGE */
+/* ######### LANDING PAGE  ############ */
+/* ### MAIN ### */
 .contentLD {
   display: flex;
   flex-wrap: wrap;
@@ -578,6 +527,17 @@ Utiliser : @include mainFont  */
   justify-content: center;
   align-items: center;
 }
+.contentLD__menu1 h2 {
+  font-family: "Devonshire", cursive;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.contentLD__menu1 p {
+  font-family: "Amatic SC", cursive;
+}
+.contentLD__menu1 img {
+  width: 1.7rem;
+}
 .contentLD__menu2 {
   box-shadow: 0 0 1rem #ededed;
   margin: 1rem;
@@ -588,6 +548,15 @@ Utiliser : @include mainFont  */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contentLD__menu2 h2 {
+  font-family: "Croissant One", cursive;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.contentLD__menu2 p {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
 }
 .contentLD__menu3 {
   box-shadow: 0 0 1rem #ededed;
@@ -600,6 +569,14 @@ Utiliser : @include mainFont  */
   justify-content: center;
   align-items: center;
 }
+.contentLD__menu3 h2 {
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.contentLD__menu3 p {
+  font-family: "Merienda", cursive;
+}
 .contentLD__menu4 {
   box-shadow: 0 0 1rem #ededed;
   margin: 1rem;
@@ -611,26 +588,16 @@ Utiliser : @include mainFont  */
   justify-content: center;
   align-items: center;
 }
-
-/* MENU */
-.menuLD1--Menu {
-  font-family: "Amatic SC", cursive;
+.contentLD__menu4 h2 {
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  font-size: 1.4rem;
 }
-
-.menuLD2--Menu {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-}
-
-.menuLD3--Menu {
+.contentLD__menu4 p {
   font-family: "Merienda", cursive;
 }
 
-.menuLD4--Menu {
-  font-family: "Merienda", cursive;
-}
-
-/* BOUTON PROCHAINEMENT */
+/* ### NEXT ### */
 .next {
   width: 18rem;
   margin: auto;
@@ -648,21 +615,18 @@ Utiliser : @include mainFont  */
     margin: 2rem 0rem 7rem 0rem;
   }
 }
-
-.next--bgColor {
-  background-color: #579c87;
-}
-
-.next--border {
-  border-radius: 0.7rem;
-}
-
 .next p {
   font-family: "Open Sans", sans-serif;
   color: #fdcb46;
   font-weight: 400;
   font-size: 1.7rem;
   margin: 0.7rem;
+}
+.next--bgColor {
+  background-color: #579c87;
+}
+.next--border {
+  border-radius: 0.7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
