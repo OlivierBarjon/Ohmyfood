@@ -6,13 +6,36 @@ a {
     text-decoration: none;
 }
 
+
+/* POLICES TITRES */
+
+
 h1 a {
     color:#fdcb46;
 }
 
-h2 {
+
+
+.menuLD1--Typo {
+    font-family: 'Devonshire', cursive;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    font-weight:700;
+    font-size: 1.4rem;
+}
+
+.menuLD2--Typo {
+    font-family: 'Croissant One', cursive;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.menuLD3--Typo {
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.menuLD4--Typo {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 1.4rem;
 }

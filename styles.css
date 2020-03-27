@@ -8,6 +8,10 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Kaushan+Script&family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -349,19 +353,61 @@ a {
   text-decoration: none;
 }
 
+/* POLICES TITRES */
 h1 a {
   color: #fdcb46;
 }
 
-h2 {
+.menuLD1--Typo {
+  font-family: "Devonshire", cursive;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-/* POLICES GENERALES */
+.menuLD2--Typo {
+  font-family: "Croissant One", cursive;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.menuLD3--Typo {
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.menuLD4--Typo {
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* POLICE PRINCIPALE */
 /*  font-family: 'Open Sans', sans-serif;  */
+/* POLICES TITRES MENU */
+/* 
+
+ MENU 1:   font-family: 'Devonshire', cursive;
+
+ MENU 2:   font-family: 'Croissant One', cursive;
+
+ MENU 3:   font-family: 'Parisienne', cursive;
+
+ MENU 4:   font-family: 'Kaushan Script', cursive;
+
+*/
+/* MENU 1 */
+/*
+font-family: 'Amatic SC', cursive;
+*/
+/* MENU 2 */
+/* 
+font-family: 'Libre Baskerville', serif;
+*/
+/* MENU 3 et 4 */
+/* 
+font-family: 'Merienda', cursive;
+*/
 /* MAIN CONTAINER */
 .container {
   display: flex;
@@ -553,6 +599,25 @@ h2 {
   align-items: center;
 }
 
+/* MENU */
+.menuLD1--Menu {
+  font-family: "Amatic SC", cursive;
+}
+
+.menuLD2--Menu {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.menuLD3--Menu {
+  font-family: "Merienda", cursive;
+}
+
+.menuLD4--Menu {
+  font-family: "Merienda", cursive;
+}
+
+/* BOUTON PROCHAINEMENT */
 .next {
   width: 18rem;
   margin: auto;
