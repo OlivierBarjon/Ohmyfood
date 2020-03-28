@@ -8,10 +8,9 @@
         align-items: center;
         position: fixed;
         bottom: 0rem;
-        border-top: 0.2rem fade-out(rgba($color-bg-headFoot,1),0.5) solid; /* problème de rendu à corriger */
         @media screen and (max-width: 767.98px) {
             flex-wrap:wrap-reverse;
-            height:9rem;
+            height:7rem;
             justify-content:center;
         }
         @media screen and (min-width: 767.99px) {
@@ -22,6 +21,7 @@
         }
         p, a {
             padding:0rem 1.3rem 0rem 1.3rem;
+            margin: 0rem;
             @include mainFont;
             font-weight:600;
             font-size:1.3rem;

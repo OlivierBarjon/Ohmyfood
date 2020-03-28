@@ -428,13 +428,11 @@ h1 a, p a {
   align-items: center;
   position: fixed;
   bottom: 0rem;
-  border-top: 0.2rem rgba(87, 156, 135, 0.5) solid;
-  /* problème de rendu à corriger */
 }
 @media screen and (max-width: 767.98px) {
   .footer {
     flex-wrap: wrap-reverse;
-    height: 9rem;
+    height: 7rem;
     justify-content: center;
   }
 }
@@ -448,6 +446,7 @@ h1 a, p a {
 }
 .footer p, .footer a {
   padding: 0rem 1.3rem 0rem 1.3rem;
+  margin: 0rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
@@ -469,7 +468,8 @@ main h2 {
   margin: auto;
   box-shadow: 0 0 1rem #ededed;
   margin-top: 1rem;
-  padding: 3rem 0 6rem 0;
+  padding: 3rem 0 5.5rem 0;
+  /* gestion espace après texte menu */
 }
 @media screen and (max-width: 767.98px) {
   .content {
@@ -495,15 +495,10 @@ main h2 {
 .content--bgColor4 {
   background-color: #fdfffd;
 }
-.content img {
+.content > img {
+  /* a basculer dans page */
   height: 3rem;
-  margin-top: 3rem;
-}
-.content p > img {
-  /* solution temporaire */
-  height: 1.5rem;
-  margin-top: 0rem;
-  margin-right: 0.5rem;
+  margin-top: 1rem;
 }
 .content article {
   width: 80%;
@@ -515,7 +510,7 @@ main h2 {
 .content article div img {
   display: inline-block;
   /* modification du comportement natif */
-  height: 0.4rem;
+  height: 0.3rem;
 }
 @media screen and (max-width: 767.98px) {
   .content article div {
@@ -523,6 +518,7 @@ main h2 {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    margin: 2rem 0rem 1.5rem 0rem;
   }
 }
 @media screen and (min-width: 767.99px) {
@@ -536,31 +532,98 @@ main h2 {
 }
 .content--typoNote h3 {
   font-family: "Devonshire", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 0.5rem 0rem 2rem 0rem;
+}
+.content--typoNote h4 {
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+.content--typoNote p {
+  font-size: 1.3rem;
+  line-height: 1rem;
 }
 .content--typoChic {
   font-family: "Libre Baskerville", serif;
 }
 .content--typoChic h3 {
   font-family: "Croissant One", cursive;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 0.5rem 0rem 3rem 0rem;
+  text-align: center;
+  /* règle un problème sur petit écran */
+}
+.content--typoChic h4 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+.content--typoChic p {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+.content--typoChic p span {
+  font-size: 0.6rem;
+  /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
 }
 .content--typoDelice {
   font-family: "Caveat", cursive;
 }
 .content--typoDelice h3 {
   font-family: "Parisienne", cursive;
+  font-weight: normal;
+  font-size: 3.1rem;
+  margin: 1rem 0rem 3rem 0rem;
+  text-align: center;
+  /* règle un problème sur petit écran */
+}
+.content--typoDelice h4 {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+.content--typoDelice p {
+  font-size: 1.3rem;
+  line-height: 1rem;
+}
+.content--typoDelice p span {
+  font-size: 1rem;
+  /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
 }
 .content--typoPalette {
   font-family: "Caveat", cursive;
 }
 .content--typoPalette h3 {
   font-family: "Kaushan Script", cursive;
+  font-weight: normal;
+  font-size: 3.1rem;
+  margin: 1rem 0rem 3rem 0rem;
+  text-align: center;
+  /* règle un problème sur petit écran */
+}
+.content--typoPalette h4 {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+.content--typoPalette p {
+  font-size: 1.3rem;
+  line-height: 1rem;
 }
 .content--typoMentions {
+  /* a basculer dans page */
   font-family: "Open Sans", sans-serif;
+}
+.content--typoMentions h3 {
+  font-size: 1.2rem;
+}
+.content--typoMentions p {
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .tarifFloat {
   float: right;
+  font-weight: bold;
 }
 
 /* ######### LANDING PAGE  ############ */
@@ -605,14 +668,18 @@ main h2 {
 }
 .contentLD__menu1 h2 {
   font-family: "Devonshire", cursive;
-  text-align: center;
-  font-size: 1.4rem;
+  /*text-align: center;*/
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0.1rem;
 }
 .contentLD__menu1 p {
   font-family: "Caveat", cursive;
+  font-size: 2rem;
+  margin: 0.8rem;
 }
 .contentLD__menu1 img {
-  width: 1.7rem;
+  width: 2rem;
 }
 .contentLD__menu2 {
   box-shadow: 0 0 1rem #ededed;
@@ -633,12 +700,15 @@ main h2 {
 }
 .contentLD__menu2 h2 {
   font-family: "Croissant One", cursive;
+  font-weight: normal;
   text-align: center;
   font-size: 1.1rem;
 }
 .contentLD__menu2 p {
   font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
   font-weight: 700;
+  margin: 0.6rem;
 }
 .contentLD__menu3 {
   box-shadow: 0 0 1rem #ededed;
@@ -659,11 +729,16 @@ main h2 {
 }
 .contentLD__menu3 h2 {
   font-family: "Parisienne", cursive;
+  font-weight: normal;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  margin: 0.6rem;
 }
 .contentLD__menu3 p {
   font-family: "Caveat", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0.6rem;
 }
 .contentLD__menu4 {
   box-shadow: 0 0 1rem #ededed;
@@ -684,11 +759,16 @@ main h2 {
 }
 .contentLD__menu4 h2 {
   font-family: "Kaushan Script", cursive;
+  font-weight: normal;
   text-align: center;
   font-size: 1.4rem;
+  margin: 0.6rem;
 }
 .contentLD__menu4 p {
   font-family: "Caveat", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0.6rem;
 }
 
 /* ### NEXT ### */
@@ -733,8 +813,13 @@ main h2 {
 .content__NoteBasPage img {
   display: inline-block;
   width: 1.5rem;
-  margin: 0rem 0.5rem 0rem 0rem;
+  margin: 0rem 0.7rem 0rem 0rem;
   /* augmentatin spécificite de la règle margin-top et marge à droite*/
+}
+.content__NoteBasPage p {
+  font-family: "Devonshire", cursive;
+  font-size: 1.7rem;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -14,7 +14,7 @@ main h2 {
     margin:auto;
     box-shadow:0 0 1rem $color-border-menu;
     margin-top:1rem;
-    padding:3rem 0 6rem 0;
+    padding:3rem 0 5.5rem 0; /* gestion espace après texte menu */
     @media screen and (max-width: 767.98px) {
         margin-bottom: 13rem;
         width:20rem;
@@ -35,29 +35,26 @@ main h2 {
     &--bgColor4 {
         background-color:$color-bg-menu4; 
     }
-    img {
+    &>img { /* a basculer dans page */
         height:3rem;
-        margin-top:3rem;
+        margin-top:1rem;
     }
-    p>img {  /* solution temporaire */
-        height:1.5rem;
-        margin-top: 0rem;
-        margin-right : 0.5rem;
-    }
+
     article {
         width:80%;
         div {
             width:100%;
             display:flex;
-            img {
+            img { 
                 display:inline-block;  /* modification du comportement natif */
-                height:0.4rem;
+                height:0.3rem;
             }
             @media screen and (max-width: 767.98px) {
                 flex-direction:column;
                 justify-content:flex-start;
                 align-items:center;
                 align-content:center;
+                margin: 2rem 0rem 1.5rem 0rem;
             }
             @media screen and (min-width: 767.99px) {
                 justify-content:space-between;
@@ -70,32 +67,93 @@ main h2 {
         @include menu1Font;
         h3 {
             @include title1Font;
+            font-weight: normal;
+            font-size:2rem;
+            margin:0.5rem 0rem 2rem 0rem;
+        }
+        h4 {
+            font-size:1.6rem;
+            margin:1rem;
+        }
+        p {
+            font-size:1.3rem;
+            line-height: 1rem;
         }
     }
     &--typoChic {
         @include menu2Font;
         h3 {
             @include title2Font;
+            font-weight: normal;
+            font-size:1.8rem;
+            margin:0.5rem 0rem 3rem 0rem;
+            text-align: center; /* règle un problème sur petit écran */ 
+        }
+        h4 {
+            font-size:1rem;
+            margin:1rem;
+        }
+        p {
+            font-size:0.7rem;
+            line-height: 1rem;
+            span {
+                font-size:0.6rem; /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
+            }
         }
     }
     &--typoDelice {
         @include menu3Font;
         h3 {
             @include title3Font;
+            font-weight: normal;
+            font-size:3.1rem;
+            margin: 1rem 0rem 3rem 0rem;
+            text-align: center; /* règle un problème sur petit écran */
+        }
+        h4 {
+            font-size:1.3rem;
+            margin:1rem;
+        }
+        p {
+            font-size:1.3rem;
+            line-height: 1rem;
+            span {
+                font-size:1rem; /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
+            }
         }
     }
     &--typoPalette {
         @include menu4Font;
         h3 {
             @include title4Font;
+            font-weight: normal;
+            font-size:3.1rem;
+            margin:1rem 0rem 3rem 0rem;
+            text-align: center; /* règle un problème sur petit écran */
+        }
+        h4 {
+            font-size:1.3rem;
+            margin:1rem;
+        }
+        p {
+            font-size:1.3rem;
+            line-height: 1rem;
         }
     }
     
-    &--typoMentions {
+    &--typoMentions {  /* a basculer dans page */
         @include mainFont;
+        h3 {
+            font-size:1.2rem;
+        }
+        p{
+            font-size:1rem;
+            text-align: justify;
+        }
     }
 }
 
 .tarifFloat {
     float:right;
+    font-weight:bold;
 }
