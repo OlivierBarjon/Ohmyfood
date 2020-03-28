@@ -46,34 +46,51 @@ main h2 {
     }
     article {
         width:80%;
-        h4 {
-            text-align: center;
+        div {
+            width:100%;
+            display:flex;
+            img {
+                display:inline-block;  /* modification du comportement natif */
+                height:0.4rem;
+            }
+            @media screen and (max-width: 767.98px) {
+                flex-direction:column;
+                justify-content:flex-start;
+                align-items:center;
+                align-content:center;
+            }
+            @media screen and (min-width: 767.99px) {
+                justify-content:space-between;
+                align-items:baseline;   
+            }
         }
     }
+    
     &--typoNote {
         @include menu1Font;
         h3 {
             @include title1Font;
         }
     }
-    &--typoPalette {
+    &--typoChic {
         @include menu2Font;
         h3 {
             @include title2Font;
         }
     }
-    &--typoChic {
+    &--typoDelice {
         @include menu3Font;
         h3 {
             @include title3Font;
         }
     }
-    &--typoDelice {
+    &--typoPalette {
         @include menu4Font;
         h3 {
             @include title4Font;
         }
     }
+    
     &--typoMentions {
         @include mainFont;
     }

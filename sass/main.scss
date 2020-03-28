@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./vendors/cdn";
 @import "./base/reset-normalize";
 @import "./base/base";
 @import "./base/typography";
@@ -10,3 +9,4 @@
 @import "./layouts/footer";
 @import "./layouts/content";
 @import "./pages/index";
+@import "./pages/la-note-enchantee";

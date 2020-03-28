@@ -1,0 +1,17 @@
+/* ######### MENU LA NOTE ENCHANTEE  ############ */
+
+/* ### NOTE BAS DE PAGE ### */
+
+
+.content__NoteBasPage {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+    img{
+        display:inline-block;
+        width:1.5rem;
+        margin:0rem 0.5rem 0rem 0rem; /* augmentatin spécificite de la règle margin-top et marge à droite*/
+    }
+    
+}
