@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* ###### VARIABLES ######*/
-/* ### COULEURS ### */
+/* ############ VARIABLES ###########*/
+/* ####### COULEURS ######## */
 /* ## BACKGROUNDS ## */
 /* ## BORDER ## */
 /* ## FONTS ## */
@@ -356,7 +356,7 @@ html {
   /* modifie la taille de base de sorte qu'1 rem = 10px  */
 }
 
-/* ### FONT ### */
+/* ### LINKS ### */
 a {
   text-decoration: none;
 }
@@ -670,6 +670,7 @@ main h2 {
   align-content: space-around;
   margin: auto;
   margin-top: 2rem;
+  /*animations sur les blocs menus */
 }
 @media screen and (max-width: 767.98px) {
   .contentLD {
@@ -703,7 +704,6 @@ main h2 {
 }
 .contentLD__menu1 h2 {
   font-family: "Devonshire", cursive;
-  /*text-align: center;*/
   font-size: 1.5rem;
   font-weight: normal;
   margin: 0.1rem;
@@ -823,6 +823,22 @@ main h2 {
   font-size: 2rem;
   font-weight: 400;
   margin: 0.6rem;
+}
+.contentLD section {
+  transform: scale(1);
+  transition: transform 1000ms, opacity 250ms;
+}
+@media screen and (max-width: 767.98px) {
+  .contentLD section:active {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 767.99px) {
+  .contentLD section:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
 }
 
 /* ### NEXT ### */
