@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* ###### VARIABLES ######*/
 /* ### COULEURS ### */
+/* ## BACKGROUNDS ## */
+/* ## BORDER ## */
+/* ## FONTS ## */
 /* ###### MIXINS ######*/
 /* ### FONTS ### */
 /* ### BLOCS MENU LANDING PAGE ### */
@@ -534,21 +537,29 @@ main h2 {
   font-family: "Devonshire", cursive;
   font-weight: normal;
   font-size: 2rem;
+  color: #3d1319;
   margin: 0.5rem 0rem 2rem 0rem;
 }
 .content--typoNote h4 {
   font-size: 1.6rem;
   margin: 1rem;
+  color: #3d1319;
 }
 .content--typoNote p {
   font-size: 1.3rem;
   line-height: 1rem;
+  color: #3d1319;
 }
 .content--typoChic {
   font-family: "Libre Baskerville", serif;
 }
 .content--typoChic h3 {
   font-family: "Croissant One", cursive;
+  background-image: linear-gradient(to right, #c67412 0%, #a56799 50%, #6e4ccc 70%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: normal;
   font-size: 1.8rem;
   margin: 0.5rem 0rem 3rem 0rem;
@@ -567,11 +578,25 @@ main h2 {
   font-size: 0.6rem;
   /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
 }
+.content--typoChic article:nth-child(2) {
+  color: #c67412;
+}
+.content--typoChic article:nth-child(3) {
+  color: #a56799;
+}
+.content--typoChic article:nth-child(4) {
+  color: #6e4ccc;
+}
 .content--typoDelice {
   font-family: "Caveat", cursive;
 }
 .content--typoDelice h3 {
   font-family: "Parisienne", cursive;
+  background-image: linear-gradient(to right, #0228dd 0%, #0670f3 50%, #229df9 70%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: normal;
   font-size: 3.1rem;
   margin: 1rem 0rem 3rem 0rem;
@@ -581,10 +606,12 @@ main h2 {
 .content--typoDelice h4 {
   font-size: 1.3rem;
   margin: 1rem;
+  color: #000000;
 }
 .content--typoDelice p {
   font-size: 1.3rem;
   line-height: 1rem;
+  color: #000000;
 }
 .content--typoDelice p span {
   font-size: 1rem;
@@ -592,9 +619,15 @@ main h2 {
 }
 .content--typoPalette {
   font-family: "Caveat", cursive;
+  color: #000000;
 }
 .content--typoPalette h3 {
   font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: normal;
   font-size: 3.1rem;
   margin: 1rem 0rem 3rem 0rem;
@@ -612,6 +645,7 @@ main h2 {
 .content--typoMentions {
   /* a basculer dans page */
   font-family: "Open Sans", sans-serif;
+  color: #000000;
 }
 .content--typoMentions h3 {
   font-size: 1.2rem;
@@ -665,6 +699,7 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #3d1319;
 }
 .contentLD__menu1 h2 {
   font-family: "Devonshire", cursive;
@@ -677,6 +712,7 @@ main h2 {
   font-family: "Caveat", cursive;
   font-size: 2rem;
   margin: 0.8rem;
+  font-weight: 700;
 }
 .contentLD__menu1 img {
   width: 2rem;
@@ -697,9 +733,15 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #c67412;
 }
 .contentLD__menu2 h2 {
   font-family: "Croissant One", cursive;
+  background-image: linear-gradient(to right, #c67412 0%, #a56799 50%, #6e4ccc 70%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: normal;
   text-align: center;
   font-size: 1.1rem;
@@ -726,9 +768,15 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #229df9;
 }
 .contentLD__menu3 h2 {
   font-family: "Parisienne", cursive;
+  background-image: linear-gradient(to right, #0228dd 0%, #0670f3 50%, #229df9 70%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: normal;
   text-align: center;
   font-size: 1.5rem;
@@ -756,9 +804,15 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #3d9339;
 }
 .contentLD__menu4 h2 {
   font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-weight: normal;
   text-align: center;
   font-size: 1.4rem;

@@ -69,15 +69,18 @@ main h2 {
             @include title1Font;
             font-weight: normal;
             font-size:2rem;
+            color:$color-txt-menu1;
             margin:0.5rem 0rem 2rem 0rem;
         }
         h4 {
             font-size:1.6rem;
             margin:1rem;
+            color:$color-txt-menu1;
         }
         p {
             font-size:1.3rem;
             line-height: 1rem;
+            color:$color-txt-menu1;
         }
     }
     &--typoChic {
@@ -100,6 +103,15 @@ main h2 {
                 font-size:0.6rem; /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
             }
         }
+        article:nth-child(2){
+                color: $color-txt-menu2;
+            }
+        article:nth-child(3){
+                color: $color-txt-menu2bis;
+            }
+        article:nth-child(4){
+                color: $color-txt-menu2ter;
+            }
     }
     &--typoDelice {
         @include menu3Font;
@@ -113,6 +125,7 @@ main h2 {
         h4 {
             font-size:1.3rem;
             margin:1rem;
+            color: $color-txt;
         }
         p {
             font-size:1.3rem;
@@ -120,6 +133,7 @@ main h2 {
             span {
                 font-size:1rem; /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
             }
+            color:$color-txt;
         }
     }
     &--typoPalette {
@@ -139,6 +153,7 @@ main h2 {
             font-size:1.3rem;
             line-height: 1rem;
         }
+        color:$color-txt;
     }
     
     &--typoMentions {  /* a basculer dans page */
@@ -150,6 +165,7 @@ main h2 {
             font-size:1rem;
             text-align: justify;
         }
+        color:$color-txt;
     }
 }
 

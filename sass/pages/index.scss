@@ -30,6 +30,7 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
+                color:$color-txt-menu1;
             }
             h2 {
                 @include title1Font;
@@ -42,6 +43,7 @@
                 @include menu1Font;
                 font-size: 2rem;
                 margin:0.8rem;
+                font-weight: 700;
             }
             img {
                 width:2rem;
@@ -58,7 +60,8 @@
                 display:flex;
                 flex-direction:column;
                 justify-content:center;
-                align-items:center;
+                align-items:center; 
+                color :$color-txt-menu2;
             }
             h2 {
                 @include title2Font;
@@ -85,6 +88,7 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
+                color :$color-txt-menu3ter;
             }
              h2 {
                 @include title3Font;
@@ -112,6 +116,7 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
+                color :$color-txt-menu4;
             }
              h2 {
                 @include title4Font;
