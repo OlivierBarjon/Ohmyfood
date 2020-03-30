@@ -26,5 +26,30 @@
             font-weight:600;
             font-size:1.3rem;
             color: $color-titres;
+            @media screen and (min-width: 767.99px) {
+                &:hover { 
+                    animation: wiggle 2000ms 0s infinite ease-in-out;
+                }
+            }
+            @media screen and (max-width: 767.98px) {
+                &:active { 
+                    animation: wiggle 2000ms 0s infinite ease-in-out;
+                }
+            }
         }
+}
+/* animation wriggle */
+
+@keyframes wiggle {
+   0% { transform: skewX(0deg) translateX(0rem); } 
+   10% { transform: skewX(-20deg) translateX(0.5em); } 
+   20% { transform: skewX(20deg) translateX(0rem); } 
+   30% { transform: skewX(-20deg) translateX(0.5rem); } 
+   40% { transform: skewX(20deg) translateX(0rem); } 
+   50% { transform: skewX(-20deg) translateX(0.5rem); } 
+   60% { transform: skewX(20deg) translateX(0rem); } 
+   70% { transform: skewX(-20deg) translateX(0.5rem); } 
+   80% { transform: skewX(20deg) translateX(0rem); } 
+   90% { transform: skewX(-20deg) translateX(0.5rem); } 
+   100% { transform: skewX(10deg) translateX(0.1rem); }
 }

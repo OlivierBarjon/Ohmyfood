@@ -455,7 +455,53 @@ h1 a, p a {
   font-size: 1.3rem;
   color: #fdcb46;
 }
+@media screen and (min-width: 767.99px) {
+  .footer p:hover, .footer a:hover {
+    animation: wiggle 2000ms 0s infinite ease-in-out;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer p:active, .footer a:active {
+    animation: wiggle 2000ms 0s infinite ease-in-out;
+  }
+}
 
+/* animation wriggle */
+@keyframes wiggle {
+  0% {
+    transform: skewX(0deg) translateX(0rem);
+  }
+  10% {
+    transform: skewX(-20deg) translateX(0.5em);
+  }
+  20% {
+    transform: skewX(20deg) translateX(0rem);
+  }
+  30% {
+    transform: skewX(-20deg) translateX(0.5rem);
+  }
+  40% {
+    transform: skewX(20deg) translateX(0rem);
+  }
+  50% {
+    transform: skewX(-20deg) translateX(0.5rem);
+  }
+  60% {
+    transform: skewX(20deg) translateX(0rem);
+  }
+  70% {
+    transform: skewX(-20deg) translateX(0.5rem);
+  }
+  80% {
+    transform: skewX(20deg) translateX(0rem);
+  }
+  90% {
+    transform: skewX(-20deg) translateX(0.5rem);
+  }
+  100% {
+    transform: skewX(10deg) translateX(0.1rem);
+  }
+}
 /* CONTENT */
 main h2 {
   text-align: center;
@@ -848,6 +894,7 @@ main h2 {
   display: flex;
   /* en prévision du contenu a venir */
   justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 767.98px) {
   .next {
@@ -864,7 +911,7 @@ main h2 {
   color: #fdcb46;
   font-weight: 400;
   font-size: 1.7rem;
-  margin: 0.7rem;
+  margin: 0.7rem 0.3rem 0.7rem 0.7rem;
 }
 .next--bgColor {
   background-color: #579c87;
@@ -872,7 +919,35 @@ main h2 {
 .next--border {
   border-radius: 0.7rem;
 }
+.next div {
+  background-color: #fdcb46;
+  height: 0.3rem;
+  width: 0.3rem;
+  border-radius: 50%;
+  margin: 0.1rem;
+}
+.next div:nth-child(2) {
+  animation: pointilles 2000ms 100ms infinite ease-in-out;
+}
+.next div:nth-child(3) {
+  animation: pointilles 2000ms 350ms infinite ease-in-out;
+}
+.next div:nth-child(4) {
+  animation: pointilles 2000ms 700ms infinite ease-in-out;
+}
 
+/* animation sur les pointillés */
+@keyframes pointilles {
+  0% {
+    transform: translateY(0.6rem);
+  }
+  50% {
+    transform: translateY(0.4rem);
+  }
+  100% {
+    transform: translateY(0.6rem);
+  }
+}
 /* ######### MENU LA NOTE ENCHANTEE  ############ */
 /* ### NOTE BAS DE PAGE ### */
 .content__NoteBasPage {
