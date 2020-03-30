@@ -83,6 +83,8 @@ main h2 {
             color:$color-txt-menu1;
         }
     }
+    
+    
     &--typoChic {
         @include menu2Font;
         h3 {
@@ -173,3 +175,37 @@ main h2 {
     float:right;
     font-weight:bold;
 }
+
+/*animations underline*/
+
+
+.content__TitleH4--underline {
+    position:relative;
+    z-index:1;
+}
+
+.content__TitleH4--underline:hover::after{
+    transform:scaleX(1);
+}
+
+.content__TitleH4--underline::after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    border-bottom: 0.09rem $color-txt-menu1 solid;
+    transform:scaleX(0);
+    transform-origin:0% 100%;
+    z-index:-1;
+    transition: transform 500ms;
+}
+
+
+
+
+
+
+
+
