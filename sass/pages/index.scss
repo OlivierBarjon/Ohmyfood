@@ -1,13 +1,13 @@
-/* ######### LANDING PAGE  ############ */
+/* ######### HOME PAGE ########## */
 
 /* ### MAIN ### */
 
-.contentLD {
+.contentHP {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    align-content: space-around;
+    /*align-content: space-around;*/
     margin:auto;
     margin-top:2rem;
     @media screen and (max-width: 767.98px) {
@@ -16,11 +16,11 @@
     }
     @media screen and (min-width: 767.99px) {
         flex-direction:row; 
-        width:40rem;
+        width:40rem; /* 40rem : réglage pour un affichage 2 par ligne - ligne a passer en commentaire au besoin du CTO */
     }
     &__menu1{
-            @include menusLD;
-            background-color: $color-bg-menu1;
+            @include menusHP; /* ombre taille et marge */
+            background-color: $color-bg-menu1;  
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -30,10 +30,10 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
-                color:$color-txt-menu1;
+                color:$color-txt-menu1; /* augm spec*/
             }
             h2 {
-                @include title1Font;
+                @include titleM1Font;
                 font-size: 1.5rem;
                 font-weight:normal;
                 margin :0.1rem;
@@ -49,8 +49,8 @@
             }
         }
     &__menu2{
-            @include menusLD;
-            background-color: $color-bg-menu2; 
+            @include menusHP; /* ombre taille et marge */
+            background-color: $color-bg-menu2;  
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -60,10 +60,10 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center; 
-                color :$color-txt-menu2;
+                color :$color-txt-menu2; /* augm spec*/
             }
             h2 {
-                @include title2Font;
+                @include titleM2Font; /* rappel : contient l'effet de dégradé de couleurs */
                 font-weight:normal;
                 text-align: center;
                 font-size: 1.1rem;
@@ -76,8 +76,8 @@
                 }
     }
      &__menu3{
-            @include menusLD;
-            background-color: $color-bg-menu3; 
+            @include menusHP; /* ombre taille et marge */
+            background-color: $color-bg-menu3;  
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -87,14 +87,14 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
-                color :$color-txt-menu3ter;
+                color :$color-txt-menu3ter; /* augm spec*/
             }
              h2 {
-                @include title3Font;
+                @include titleM3Font; /* rappel : contient l'effet de dégradé de couleurs */
                 font-weight:normal;
                 text-align: center;
                 font-size: 1.5rem;
-                 margin:0.6rem;
+                margin:0.6rem;
              }
              p {
                 @include menu3Font;
@@ -104,8 +104,8 @@
              }
     }
      &__menu4{
-            @include menusLD;
-            background-color: $color-bg-menu4; 
+            @include menusHP; /* ombre taille et marge */
+            background-color: $color-bg-menu4;
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -115,10 +115,10 @@
                 flex-direction:column;
                 justify-content:center;
                 align-items:center;
-                color :$color-txt-menu4;
+                color :$color-txt-menu4; /* augm spec*/
             }
              h2 {
-                @include title4Font;
+                @include titleM4Font; /* rappel : contient l'effet de dégradé de couleurs */
                 font-weight:normal;
                 text-align: center;
                 font-size: 1.4rem;
@@ -131,8 +131,10 @@
                 margin:0.6rem;
              }
     } 
-    /*animations sur les blocs menus */ 
-    section {
+    
+/* # ANIMATION SUR LES BLOCS MENUS # */ 
+    
+    section { /* rappel: les blocs menu sont dans des blocs section */
         transform:scale(1);
         transition: transform 1000ms, opacity 250ms;
     }
@@ -158,18 +160,18 @@
 .next {
     width:18rem;
     margin:auto;
-    display:flex; /* en prévision du contenu a venir */
+    display:flex;
     justify-content: center;
     align-items:center;
-    @media screen and (max-width: 767.98px) {
+    @media screen and (max-width: 767.98px) {  /* gestion de la marge avec le contenu et le footer - petits écrans  */
         margin: 2rem 0rem 13rem 0rem;  
     }
-    @media screen and (min-width: 767.99px) {
+    @media screen and (min-width: 767.99px) {  /* gestion de la marge avec le contenu et le footer - grands écrans  */
         margin: 2rem 0rem 7rem 0rem;    
     }
     p {
         font-family: 'Open Sans', sans-serif; 
-        color:$color-titres;
+        color:$color-link;
         font-weight:400;
         font-size:1.7rem;
         margin:0.7rem 0.3rem 0.7rem 0.7rem;
@@ -181,12 +183,14 @@
         border-radius: 0.7rem;
     } 
     div {
-        background-color:$color-titres;
+        background-color:$color-link;
         height:0.3rem;
         width:0.3rem;
         border-radius:50%;
         margin:0.1rem;  
     }
+    
+/* # ANIMATION SUR LES POINTILLES # */
     
     div:nth-child(2) {
         animation:pointilles 2000ms 100ms infinite ease-in-out;     
@@ -199,7 +203,6 @@
         animation:pointilles 2000ms 700ms infinite ease-in-out;     
     }
 }
-/* animation sur les pointillés */
 
 @keyframes pointilles {
     0% {
@@ -212,5 +215,3 @@
         transform:translateY(0.6rem);
     }
 }
-
-

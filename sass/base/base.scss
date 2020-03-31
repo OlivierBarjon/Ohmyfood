@@ -4,13 +4,14 @@ html {
     font-size:62,5%; /* modifie la taille de base de sorte qu'1 rem = 10px  */
 }
 
-/* ### LINKS ### */
-
-a {
-    text-decoration: none;
+body {
+    background-color:$color-bg;
 }
 
-h1 a, p a {
-    color:$color-titres;
+/* ### LINKS ### */
+
+a, h1 a, p a {
+    color:$color-link;
+    text-decoration: none;
 }
 

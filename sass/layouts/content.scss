@@ -1,4 +1,4 @@
-/* CONTENT */
+/* ######### CONTENUS ########## */
 
 main h2 {
     text-align: center;
@@ -66,7 +66,7 @@ main h2 {
     &--typoNote {
         @include menu1Font;
         h3 {
-            @include title1Font;
+            @include titleM1Font;
             font-weight: normal;
             font-size:2rem;
             color:$color-txt-menu1;
@@ -88,7 +88,7 @@ main h2 {
     &--typoChic {
         @include menu2Font;
         h3 {
-            @include title2Font;
+            @include titleM2Font;
             font-weight: normal;
             font-size:1.8rem;
             margin:0.5rem 0rem 3rem 0rem;
@@ -118,7 +118,7 @@ main h2 {
     &--typoDelice {
         @include menu3Font;
         h3 {
-            @include title3Font;
+            @include titleM3Font;
             font-weight: normal;
             font-size:3.1rem;
             margin: 1rem 0rem 3rem 0rem;
@@ -141,7 +141,7 @@ main h2 {
     &--typoPalette {
         @include menu4Font;
         h3 {
-            @include title4Font;
+            @include titleM4Font;
             font-weight: normal;
             font-size:3.1rem;
             margin:1rem 0rem 3rem 0rem;

@@ -1,19 +1,19 @@
-/* ######### MENU LA NOTE ENCHANTEE  ############ */
+/* ######### PAGE : LA NOTE ENCHANTEE ########## */
 
-/* ### NOTE BAS DE PAGE ### */
-
+/* ### NOTE + TEXTE EN BAS DE PAGE ### */
 
 .content__NoteBasPage {
     display:flex;
     justify-content: center;
     align-items:center;
     img{
-        display:inline-block;
-        width:1.5rem;
-        margin:0rem 0.7rem 0rem 0rem; /* augmentatin spécificite de la règle margin-top et marge à droite*/
+        /*display:inline-block;*/
+        width:1.5rem; /* Taille de la note de musique */
+        /* margin:0rem 0.7rem 0rem 0rem;*/
+        margin-right:0.7rem; /* marge de droite par rapport au texte */
     }
     p {
-        @include title1Font;
+        @include titleM1Font; /* p style h menu 1 */
         font-size:1.7rem;
         font-weight:normal;
     }

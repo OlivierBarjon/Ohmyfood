@@ -1,5 +1,4 @@
-
-/* ###### MIXINS ######*/
+/* ######### MIXINS ########## */
 
 /* ### FONTS ### */
 
@@ -7,11 +6,11 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-@mixin title1Font {
+@mixin titleM1Font {
     font-family: 'Devonshire', cursive;
 }
 
-@mixin title2Font {
+@mixin titleM2Font {
     font-family: 'Croissant One', cursive;
     background-image: linear-gradient(to right, $color-txt-menu2 0%, $color-txt-menu2bis 50%, $color-txt-menu2ter 70%);
     -webkit-background-clip: text;
@@ -21,7 +20,7 @@
 
 }
 
-@mixin title3Font {
+@mixin titleM3Font {
     font-family: 'Parisienne', cursive;
     background-image: linear-gradient(to right, $color-txt-menu3 0%, $color-txt-menu3bis 50%, $color-txt-menu3ter 70% );
     -webkit-background-clip: text;
@@ -30,7 +29,7 @@
     color: transparent;
 }
 
-@mixin title4Font {
+@mixin titleM4Font {
     font-family: 'Kaushan Script', cursive;
     background-image: linear-gradient(to right, $color-txt-menu4 0%, $color-txt-menu4bis 100%);
     -webkit-background-clip: text;
@@ -55,9 +54,9 @@
     font-family: 'Caveat', cursive;
 }
 
-/* ### BLOCS MENU LANDING PAGE ### */
+/* ### BLOCS MENU HOME PAGE ### */
 
-@mixin menusLD {
+@mixin menusHP {
         box-shadow: 0 0 1rem $color-border-menu;
         margin: 1rem;
         width:17rem;

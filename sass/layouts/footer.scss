@@ -1,4 +1,4 @@
-/* FOOTER */
+/* ######### FOOTER ########## */
 
 .footer {
         display:flex;
@@ -25,7 +25,7 @@
             @include mainFont;
             font-weight:600;
             font-size:1.3rem;
-            color: $color-titres;
+            color: $color-link;
             @media screen and (min-width: 767.99px) {
                 &:hover { 
                     animation: wiggle 2000ms 0s infinite ease-in-out;
