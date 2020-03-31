@@ -1,0 +1,38 @@
+/* ######### PAGE : LE CHIC A LA FRANCAISE ########## */
+
+.content {
+    &--bgColor2 {
+        background-color:$color-bg-menu2; 
+    }
+     &--typoChic {
+        @include menu2Font;
+        h3 {
+            @include titleM2Font;
+            font-weight: normal;
+            font-size:1.8rem;
+            margin:0.5rem 0rem 3rem 0rem;
+            text-align: center; /* règle un problème sur petit écran */ 
+        }
+        h4 {
+            font-size:1rem;
+            margin:1rem;
+        }
+        p {
+            font-size:0.7rem;
+            line-height: 1rem;
+            span {
+                font-size:0.6rem; /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
+            }
+            overflow:hidden; /* Règle un problème sur l'affichage des tarifs */
+        }
+        article:nth-child(2){
+                color: $color-txt-menu2;
+            }
+        article:nth-child(3){
+                color: $color-txt-menu2bis;
+            }
+        article:nth-child(4){
+                color: $color-txt-menu2ter;
+            }
+    }
+}

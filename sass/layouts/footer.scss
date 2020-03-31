@@ -8,6 +8,7 @@
         align-items: center;
         position: fixed;
         bottom: 0rem;
+        z-index:2; /* règle un problème lié à l'animation soulignement sur les titres des articles dans les pages menu  */
         @media screen and (max-width: 767.98px) {
             flex-wrap:wrap-reverse;
             height:7rem;
@@ -26,19 +27,21 @@
             font-weight:600;
             font-size:1.3rem;
             color: $color-link;
+            
+/* # ANIMATION WRIGGLE SUR LES TEXTES # */
+            
             @media screen and (min-width: 767.99px) {
                 &:hover { 
-                    animation: wiggle 2000ms 0s infinite ease-in-out;
+                    animation: wiggle 2000ms 0s infinite;
                 }
             }
             @media screen and (max-width: 767.98px) {
                 &:active { 
-                    animation: wiggle 2000ms 0s infinite ease-in-out;
+                    animation: wiggle 2000ms 0s infinite;
                 }
             }
         }
 }
-/* animation wriggle */
 
 @keyframes wiggle {
    0% { transform: skewX(0deg) translateX(0rem); } 

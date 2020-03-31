@@ -1,0 +1,30 @@
+/* ######### PAGE : LE DELICE DES PAPILLES ########## */
+
+.content {
+    &--bgColor3 {
+        background-color:$color-bg-menu3; 
+    }
+    &--typoDelice {
+        @include menu3Font;
+        h3 {
+            @include titleM3Font;
+            font-weight: normal;
+            font-size:3.1rem;
+            margin: 1rem 0rem 3rem 0rem;
+            text-align: center; /* règle un problème sur petit écran */
+        }
+        h4 {
+            font-size:1.3rem;
+            margin:1rem;
+            color: $color-txt;
+        }
+        p {
+            font-size:1.3rem;
+            line-height: 1rem;
+            span {
+                font-size:1rem; /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
+            }
+            color:$color-txt;
+        }
+    }
+}

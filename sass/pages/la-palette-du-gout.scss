@@ -1,0 +1,26 @@
+/* ######### PAGE : LA PALETTE DU GOUT ########## */
+
+.content {
+    &--bgColor4 {
+        background-color:$color-bg-menu4; 
+    }
+    &--typoPalette {
+        @include menu4Font;
+        h3 {
+            @include titleM4Font;
+            font-weight: normal;
+            font-size:3.1rem;
+            margin:1rem 0rem 3rem 0rem;
+            text-align: center; /* règle un problème sur petit écran */
+        }
+        h4 {
+            font-size:1.3rem;
+            margin:1rem;
+        }
+        p {
+            font-size:1.3rem;
+            line-height: 1rem;
+        }
+        color:$color-txt;
+    } 
+}

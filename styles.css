@@ -368,6 +368,15 @@ a, h1 a, p a {
   text-decoration: none;
 }
 
+/* ### TEXTES ### */
+h1 {
+  color: #fdcb46;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: -0.2rem;
+}
+
 /* ######### TYPOS ########## */
 /* ### PRINCIPALE ### */
 /* @include mainFont  */
@@ -406,7 +415,7 @@ a, h1 a, p a {
   display: flex;
   justify-content: center;
   border-bottom: 0.2rem rgba(87, 156, 135, 0.5) solid;
-  /* problème de rendu à corriger */
+  /* Fonction d'opacité de couleur automatique */
 }
 @media screen and (max-width: 230px) {
   .header {
@@ -416,13 +425,6 @@ a, h1 a, p a {
 }
 .header--bgColor {
   background-color: #579c87;
-}
-.header h1 {
-  color: #fdcb46;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: -0.2rem;
 }
 
 /* ######### FOOTER ########## */
@@ -434,6 +436,8 @@ a, h1 a, p a {
   align-items: center;
   position: fixed;
   bottom: 0rem;
+  z-index: 2;
+  /* règle un problème lié à l'animation soulignement sur les titres des articles dans les pages menu  */
 }
 @media screen and (max-width: 767.98px) {
   .footer {
@@ -457,19 +461,19 @@ a, h1 a, p a {
   font-weight: 600;
   font-size: 1.3rem;
   color: #fdcb46;
+  /* # ANIMATION WRIGGLE SUR LES TEXTES # */
 }
 @media screen and (min-width: 767.99px) {
   .footer p:hover, .footer a:hover {
-    animation: wiggle 2000ms 0s infinite ease-in-out;
+    animation: wiggle 2000ms 0s infinite;
   }
 }
 @media screen and (max-width: 767.98px) {
   .footer p:active, .footer a:active {
-    animation: wiggle 2000ms 0s infinite ease-in-out;
+    animation: wiggle 2000ms 0s infinite;
   }
 }
 
-/* animation wriggle */
 @keyframes wiggle {
   0% {
     transform: skewX(0deg) translateX(0rem);
@@ -506,12 +510,14 @@ a, h1 a, p a {
   }
 }
 /* ######### CONTENUS ########## */
+/* # TITRE H2 # */
 main h2 {
   text-align: center;
   margin-top: 2rem;
   font-family: "Open Sans", sans-serif;
 }
 
+/* # BLOC PRINCIPAL # */
 .content {
   display: flex;
   flex-direction: column;
@@ -521,7 +527,7 @@ main h2 {
   box-shadow: 0 0 1rem #ededed;
   margin-top: 1rem;
   padding: 3rem 0 5.5rem 0;
-  /* gestion espace après texte menu */
+  /* gestion espace avant et après les textes du menu */
 }
 @media screen and (max-width: 767.98px) {
   .content {
@@ -535,37 +541,22 @@ main h2 {
     width: 37rem;
   }
 }
-.content--bgColor1 {
-  background-color: #fcdfdb;
-}
-.content--bgColor2 {
-  background-color: #fff5fe;
-}
-.content--bgColor3 {
-  background-color: #f9f9f9;
-}
-.content--bgColor4 {
-  background-color: #fdfffd;
-}
-.content > img {
-  /* a basculer dans page */
-  height: 3rem;
-  margin-top: 1rem;
-}
-.content article {
+
+/* # BLOCS PLATS DU MENU # */
+article {
   width: 80%;
 }
-.content article div {
+article div {
   width: 100%;
   display: flex;
 }
-.content article div img {
+article div img {
   display: inline-block;
   /* modification du comportement natif */
   height: 0.3rem;
 }
 @media screen and (max-width: 767.98px) {
-  .content article div {
+  article div {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -574,142 +565,19 @@ main h2 {
   }
 }
 @media screen and (min-width: 767.99px) {
-  .content article div {
+  article div {
     justify-content: space-between;
     align-items: baseline;
   }
 }
-.content--typoNote {
-  font-family: "Caveat", cursive;
-}
-.content--typoNote h3 {
-  font-family: "Devonshire", cursive;
-  font-weight: normal;
-  font-size: 2rem;
-  color: #3d1319;
-  margin: 0.5rem 0rem 2rem 0rem;
-}
-.content--typoNote h4 {
-  font-size: 1.6rem;
-  margin: 1rem;
-  color: #3d1319;
-}
-.content--typoNote p {
-  font-size: 1.3rem;
-  line-height: 1rem;
-  color: #3d1319;
-}
-.content--typoChic {
-  font-family: "Libre Baskerville", serif;
-}
-.content--typoChic h3 {
-  font-family: "Croissant One", cursive;
-  background-image: linear-gradient(to right, #c67412 0%, #a56799 50%, #6e4ccc 70%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: normal;
-  font-size: 1.8rem;
-  margin: 0.5rem 0rem 3rem 0rem;
-  text-align: center;
-  /* règle un problème sur petit écran */
-}
-.content--typoChic h4 {
-  font-size: 1rem;
-  margin: 1rem;
-}
-.content--typoChic p {
-  font-size: 0.7rem;
-  line-height: 1rem;
-}
-.content--typoChic p span {
-  font-size: 0.6rem;
-  /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
-}
-.content--typoChic article:nth-child(2) {
-  color: #c67412;
-}
-.content--typoChic article:nth-child(3) {
-  color: #a56799;
-}
-.content--typoChic article:nth-child(4) {
-  color: #6e4ccc;
-}
-.content--typoDelice {
-  font-family: "Caveat", cursive;
-}
-.content--typoDelice h3 {
-  font-family: "Parisienne", cursive;
-  background-image: linear-gradient(to right, #0228dd 0%, #0670f3 50%, #229df9 70%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: normal;
-  font-size: 3.1rem;
-  margin: 1rem 0rem 3rem 0rem;
-  text-align: center;
-  /* règle un problème sur petit écran */
-}
-.content--typoDelice h4 {
-  font-size: 1.3rem;
-  margin: 1rem;
-  color: #000000;
-}
-.content--typoDelice p {
-  font-size: 1.3rem;
-  line-height: 1rem;
-  color: #000000;
-}
-.content--typoDelice p span {
-  font-size: 1rem;
-  /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
-}
-.content--typoPalette {
-  font-family: "Caveat", cursive;
-  color: #000000;
-}
-.content--typoPalette h3 {
-  font-family: "Kaushan Script", cursive;
-  background-image: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: normal;
-  font-size: 3.1rem;
-  margin: 1rem 0rem 3rem 0rem;
-  text-align: center;
-  /* règle un problème sur petit écran */
-}
-.content--typoPalette h4 {
-  font-size: 1.3rem;
-  margin: 1rem;
-}
-.content--typoPalette p {
-  font-size: 1.3rem;
-  line-height: 1rem;
-}
-.content--typoMentions {
-  /* a basculer dans page */
-  font-family: "Open Sans", sans-serif;
-  color: #000000;
-}
-.content--typoMentions h3 {
-  font-size: 1.2rem;
-}
-.content--typoMentions p {
-  font-size: 1rem;
-  text-align: justify;
-}
 
+/* # TARIFS FLOTANTS # */
 .tarifFloat {
   float: right;
   font-weight: bold;
 }
 
-/*animations underline*/
+/* # ANIMATION EFFET SOULIGNEMENT # */
 .content__TitleH4--underline {
   position: relative;
   z-index: 1;
@@ -726,7 +594,7 @@ main h2 {
   right: 0;
   bottom: 0;
   left: 0;
-  border-bottom: 0.09rem #3d1319 solid;
+  border-bottom: 0.09rem #000000 solid;
   transform: scaleX(0);
   transform-origin: 0% 100%;
   z-index: -1;
@@ -909,19 +777,19 @@ main h2 {
   font-weight: 400;
   margin: 0.6rem;
 }
-.contentHP section {
-  /* rappel: les blocs menu sont dans des blocs section */
+.contentHP a {
+  /* remplacer "a" par "section" pour inclure le cadre dans l'animation */
   transform: scale(1);
   transition: transform 1000ms, opacity 250ms;
 }
 @media screen and (max-width: 767.98px) {
-  .contentHP section:active {
+  .contentHP a:active {
     transform: scale(1.1);
     opacity: 0.5;
   }
 }
 @media screen and (min-width: 767.99px) {
-  .contentHP section:hover {
+  .contentHP a:hover {
     transform: scale(1.1);
     opacity: 0.5;
   }
@@ -990,7 +858,40 @@ main h2 {
   }
 }
 /* ######### PAGE : LA NOTE ENCHANTEE ########## */
-/* ### NOTE + TEXTE EN BAS DE PAGE ### */
+/* # NOTE + TEXTE EN HAUT DE PAGE #  */
+.content > img {
+  height: 3rem;
+  /* Taille de la note de musique */
+  margin-top: 1rem;
+}
+
+/* ### CONTENU ### */
+.content {
+  /* ### NOTE + TEXTE EN BAS DE PAGE ### */
+}
+.content--bgColor1 {
+  background-color: #fcdfdb;
+}
+.content--typoNote {
+  font-family: "Caveat", cursive;
+}
+.content--typoNote h3 {
+  font-family: "Devonshire", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #3d1319;
+  margin: 0.5rem 0rem 2rem 0rem;
+}
+.content--typoNote h4 {
+  font-size: 1.6rem;
+  margin: 1rem;
+  color: #3d1319;
+}
+.content--typoNote p {
+  font-size: 1.3rem;
+  line-height: 1rem;
+  color: #3d1319;
+}
 .content__NoteBasPage {
   display: flex;
   justify-content: center;
@@ -1009,6 +910,128 @@ main h2 {
   /* p style h menu 1 */
   font-size: 1.7rem;
   font-weight: normal;
+}
+
+/* ######### PAGE : LA PALETTE DU GOUT ########## */
+.content--bgColor4 {
+  background-color: #fdfffd;
+}
+.content--typoPalette {
+  font-family: "Caveat", cursive;
+  color: #000000;
+}
+.content--typoPalette h3 {
+  font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: normal;
+  font-size: 3.1rem;
+  margin: 1rem 0rem 3rem 0rem;
+  text-align: center;
+  /* règle un problème sur petit écran */
+}
+.content--typoPalette h4 {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+.content--typoPalette p {
+  font-size: 1.3rem;
+  line-height: 1rem;
+}
+
+/* ######### PAGE : LE CHIC A LA FRANCAISE ########## */
+.content--bgColor2 {
+  background-color: #fff5fe;
+}
+.content--typoChic {
+  font-family: "Libre Baskerville", serif;
+}
+.content--typoChic h3 {
+  font-family: "Croissant One", cursive;
+  background-image: linear-gradient(to right, #c67412 0%, #a56799 50%, #6e4ccc 70%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 0.5rem 0rem 3rem 0rem;
+  text-align: center;
+  /* règle un problème sur petit écran */
+}
+.content--typoChic h4 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+.content--typoChic p {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  overflow: hidden;
+  /* Règle un problème sur l'affichage des tarifs */
+}
+.content--typoChic p span {
+  font-size: 0.6rem;
+  /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
+}
+.content--typoChic article:nth-child(2) {
+  color: #c67412;
+}
+.content--typoChic article:nth-child(3) {
+  color: #a56799;
+}
+.content--typoChic article:nth-child(4) {
+  color: #6e4ccc;
+}
+
+/* ######### PAGE : LE DELICE DES PAPILLES ########## */
+.content--bgColor3 {
+  background-color: #f9f9f9;
+}
+.content--typoDelice {
+  font-family: "Caveat", cursive;
+}
+.content--typoDelice h3 {
+  font-family: "Parisienne", cursive;
+  background-image: linear-gradient(to right, #0228dd 0%, #0670f3 50%, #229df9 70%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: normal;
+  font-size: 3.1rem;
+  margin: 1rem 0rem 3rem 0rem;
+  text-align: center;
+  /* règle un problème sur petit écran */
+}
+.content--typoDelice h4 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  color: #000000;
+}
+.content--typoDelice p {
+  font-size: 1.3rem;
+  line-height: 1rem;
+  color: #000000;
+}
+.content--typoDelice p span {
+  font-size: 1rem;
+  /* règle un problème d'alignement à cause d'une longueur de texte trop importante*/
+}
+
+/* ######### PAGE : MENTIONS LEGALES ########## */
+.content--typoMentions {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+}
+.content--typoMentions h3 {
+  font-size: 1.2rem;
+}
+.content--typoMentions p {
+  font-size: 1rem;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=styles.css.map */

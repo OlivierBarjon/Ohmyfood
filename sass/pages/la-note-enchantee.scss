@@ -1,21 +1,57 @@
 /* ######### PAGE : LA NOTE ENCHANTEE ########## */
 
-/* ### NOTE + TEXTE EN BAS DE PAGE ### */
 
-.content__NoteBasPage {
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    img{
-        /*display:inline-block;*/
-        width:1.5rem; /* Taille de la note de musique */
-        /* margin:0rem 0.7rem 0rem 0rem;*/
-        margin-right:0.7rem; /* marge de droite par rapport au texte */
+/* # NOTE + TEXTE EN HAUT DE PAGE #  */
+
+.content>img {
+    height:3rem; /* Taille de la note de musique */
+    margin-top:1rem;
+} 
+
+
+/* ### CONTENU ### */
+
+.content {
+    &--bgColor1 {
+        background-color:$color-bg-menu1; 
     }
-    p {
-        @include titleM1Font; /* p style h menu 1 */
-        font-size:1.7rem;
-        font-weight:normal;
+    &--typoNote {
+        @include menu1Font;
+        h3 {
+            @include titleM1Font;
+            font-weight: normal;
+            font-size:2rem;
+            color:$color-txt-menu1;
+            margin:0.5rem 0rem 2rem 0rem;
+        }
+        h4 {
+            font-size:1.6rem;
+            margin:1rem;
+            color:$color-txt-menu1;
+        }
+        p {
+            font-size:1.3rem;
+            line-height: 1rem;
+            color:$color-txt-menu1;
+        }
     }
     
+/* ### NOTE + TEXTE EN BAS DE PAGE ### */
+    
+    &__NoteBasPage {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        img{
+            /*display:inline-block;*/
+            width:1.5rem; /* Taille de la note de musique */
+            /* margin:0rem 0.7rem 0rem 0rem;*/
+            margin-right:0.7rem; /* marge de droite par rapport au texte */
+        }
+        p {
+            @include titleM1Font; /* p style h menu 1 */
+            font-size:1.7rem;
+            font-weight:normal;
+        }
+    }
 }

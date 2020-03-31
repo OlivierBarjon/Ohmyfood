@@ -6,18 +6,11 @@
         height:7rem;
         display:flex;
         justify-content:center;
-        border-bottom: 0.2rem fade-out(rgba($color-bg-headFoot,1),0.5) solid;  /* problème de rendu à corriger */
+        border-bottom: 0.2rem fade-out(rgba($color-bg-headFoot,1),0.5) solid;  /* Fonction d'opacité de couleur automatique */
         @media screen and (max-width: 230px) { /* montres connectées */
           overflow:hidden;   
         }
         &--bgColor {
             background-color:$color-bg-headFoot; 
-        }
-        h1 {
-            color: $color-link;
-            font-family: 'Open Sans', sans-serif;
-            font-weight:700;
-            font-size:3rem;
-            letter-spacing:-0.2rem;          
         }
 }
