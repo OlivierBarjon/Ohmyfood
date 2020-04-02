@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="341" height="13" viewBox="0 0 341 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0228dd;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Liseret3-1G" class="cls-1" d="M338,6H17L16,5H13L11,4H9L8,3H6L5,2H4L3,1H2L1,0H0V2H1V3L2,4V5H3V6H4V7H5V8H6L7,9H8l1,1h1l1,1h3l1,1h7l4,1H341V12l-1-1V10h-1V8l-1-1V6Z"/>
+</svg>

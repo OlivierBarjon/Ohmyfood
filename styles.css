@@ -538,7 +538,7 @@ main h2 {
 @media screen and (min-width: 767.99px) {
   .content {
     margin-bottom: 7rem;
-    width: 37rem;
+    width: 40rem;
   }
 }
 
@@ -551,9 +551,9 @@ article div {
   display: flex;
 }
 article div img {
-  display: inline-block;
-  /* modification du comportement natif */
-  height: 0.3rem;
+  /*display:inline-block;  /* modification du comportement natif */
+  /*height:0.35rem;*/
+  width: 9rem;
 }
 @media screen and (max-width: 767.98px) {
   article div {
@@ -938,7 +938,7 @@ article div img {
   margin: 1rem;
 }
 .content--typoPalette p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1rem;
 }
 
@@ -967,7 +967,7 @@ article div img {
   margin: 1rem;
 }
 .content--typoChic p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   overflow: hidden;
   /* Règle un problème sur l'affichage des tarifs */
@@ -1012,7 +1012,7 @@ article div img {
   color: #000000;
 }
 .content--typoDelice p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1rem;
   color: #000000;
 }

@@ -25,7 +25,7 @@ main h2 {
     }
     @media screen and (min-width: 767.99px) {
         margin-bottom: 7rem;
-        width:37rem;
+        width:40rem;
     }
 }
   
@@ -37,8 +37,9 @@ article {
         width:100%;
         display:flex;
         img { 
-            display:inline-block;  /* modification du comportement natif */
-            height:0.3rem;
+            /*display:inline-block;  /* modification du comportement natif */
+            /*height:0.35rem;*/
+            width:9rem;
         }
         @media screen and (max-width: 767.98px) {
                 flex-direction:column;
