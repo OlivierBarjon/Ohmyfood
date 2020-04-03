@@ -1,19 +1,21 @@
 {
-  "name": "ohmyfood",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "sass": "sass --watch ./sass/main.scss:styles.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OlivierBarjon/Ohmyfood.git"
-  },
-  "author": "Olivier Barjon",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OlivierBarjon/Ohmyfood/issues"
-  },
-  "homepage": "https://github.com/OlivierBarjon/Ohmyfood#readme"
+    "name": "ohmyfood",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./sass/styles.css --style compressed",
+        "prefix": "postcss ./sass/styles.css --use autoprefixer -d ./css/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/OlivierBarjon/Ohmyfood.git"
+      },
+    "author": "Olivier Barjon",
+    "license": "ISC",
+    "browserslist":"last 4 versions",
+    "bugs": {
+        "url": "https://github.com/OlivierBarjon/Ohmyfood/issues"
+      },
+    "homepage": "https://github.com/OlivierBarjon/Ohmyfood#readme"
 }
