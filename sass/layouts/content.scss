@@ -59,6 +59,7 @@ article {
 .tarifFloat {
     float:right;
     font-weight:bold;
+    margin-left:0.1rem; /* règle un problème de retour à la ligne*/
 }
 
 /* # ANIMATION EFFET SOULIGNEMENT # */

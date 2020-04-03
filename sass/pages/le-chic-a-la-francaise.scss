@@ -25,14 +25,17 @@
             }
             overflow:hidden; /* Règle un problème sur l'affichage des tarifs */
         }
-        article:nth-child(2){
+        article {
+            margin-bottom:1.3rem;
+            &:nth-child(2){
                 color: $color-txt-menu2;
             }
-        article:nth-child(3){
+            &:nth-child(3){
                 color: $color-txt-menu2bis;
             }
-        article:nth-child(4){
+            &:nth-child(4){
                 color: $color-txt-menu2ter;
-            }
+            }  
+         }
     }
 }
